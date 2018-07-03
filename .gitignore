@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+front
+images
+.DS_Store
+.vscode
+dist

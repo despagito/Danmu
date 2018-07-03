@@ -1,0 +1,19 @@
+html,
+body,
+#root {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.full-container{
+  width: 100%;
+  background: #000000;
+  height: 100%;
+}
