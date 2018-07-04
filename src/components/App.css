@@ -1,3 +1,5 @@
+
+/* APP */
 html,
 body,
 #root {
@@ -14,6 +16,72 @@ body,
 
 .full-container{
   width: 100%;
-  background: #000000;
   height: 100%;
+  /* width: 800px;
+  height: 700px; */
+  /* background: #000000; */
+  color:#fff;
 }
+.danmu-container{
+  width:500px;
+  height: 400px;
+  margin: 0 0 10px 0;
+}
+
+
+
+
+
+/* danmu */
+.danmu-board{
+  width: 100%;
+  height: 100%;
+  background: #463744;
+}
+.marquee {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+}
+
+.marquee1 {
+  -webkit-animation: moveleft 2s infinite linear;
+  animation: moveleft 2s infinite linear;
+  animation-duration: 5s;
+  position: relative;
+  left: 100%;
+  padding: 0;
+  min-width:200%;
+  /* background: #945571; */
+  margin: 0;
+}
+
+.marquee2 {
+  background: #94c57c;
+}
+
+.marquee li{
+  float: left;
+  margin: 0 2% 0 0;
+  list-style: none;
+}
+
+@-webkit-keyframes moveleft{
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+
+@keyframes moveleft{
+  0%{
+    left: 100%;
+  }
+  100%{
+    left: -100%;
+  }
+}
+
+

@@ -7,7 +7,7 @@ new WebpackDevServer(webpack(config), {
   publicPath: config.output.publicPath,
   hot: true,
   historyApiFallback: true
-}).listen(3001, 'localhost', (err, result) => {
+}).listen(3030, 'localhost', (err, result) => {
   if (err) console.log(err)
-  console.log('Listening at localhost:3001')
+  console.log('Listening at localhost:3030')
 })
