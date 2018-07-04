@@ -5,44 +5,38 @@ import './App.css'
 export default class Danmu extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      newDanmuList: []
-    }
-    this.divideMarq()
   }
-  componentDidMount() {
-    // this.divideMarq()
-  }
+
   componentWillMount() {
-    // this.divideMarq()
+
   }
+
+  componentDidMount() {
+
+  }
+
   componentDidUpdate() {
 
   }
-  // how to make this run before render()
-  divideMarq() {
-    // // split this.props.danmuList into danmuLines * eachLineNums
-    // let boardHeight = this.elemHeight
+
+  render() {
+
     let boardHeight = 400
-    // console.log(boardHeight)
     let danmuLines = boardHeight / 50
     let eachLineNums = this.props.danmuList.length / danmuLines
-    let danmuList = this.props.danmuList
+    let danmuList = JSON.parse(JSON.stringify(this.props.danmuList))
     let newDanmuList = []
 
     while (danmuList.length) {
       newDanmuList.push(danmuList.splice(0, eachLineNums))
     }
-    this.state.newDanmuList = newDanmuList // get error when using this.setState()
-  }
 
-  render() {
-    let multiMarq = this.state.newDanmuList.map((entry, key) => {
+    let multiMarq = newDanmuList.map((entry, key) => {
       return (<Marquee1 danmuList={entry} key={key} />)
     })
 
     return (
-      <div className="danmu-board" ref={(elem) => this.elemHeight = elem.clientHeight}>
+      <div className="danmu-board" >
         {multiMarq}
       </div >
     )
@@ -65,20 +59,23 @@ good
 class Marquee1 extends Component {
   constructor(props) {
     super(props)
-    this.state = {
-      speed: Math.floor(Math.random() * 20 + 5) + 's',
-    }
   }
 
   render() {
+    let bg_choices = ['#7C9CE2', '#2C59BB', '#2c4785'] // '#CAD8F0',
+
     let domList = this.props.danmuList.map((entry, key) => {
+      let random_bg = bg_choices[Math.floor(Math.random() * bg_choices.length)];
+      let style = {
+        background: random_bg
+      }
       return (
-        <li key={key}>{entry}</li>
+        <li key={key} className="danmu-item" style={style}>{entry}</li>
       )
     })
 
     let style = {
-      animationDuration: this.state.speed
+      animationDuration: Math.floor(Math.random() * 20 + 20) + 's'
     }
 
     return (

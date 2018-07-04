@@ -56,9 +56,6 @@ body,
   margin: 0;
 }
 
-.marquee2 {
-  background: #94c57c;
-}
 
 .marquee li{
   float: left;
@@ -85,3 +82,8 @@ body,
 }
 
 
+/* danmu1 */
+
+.marquee2 {
+  background: #94c57c;
+}
