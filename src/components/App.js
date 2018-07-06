@@ -8,22 +8,29 @@ export default class App extends Component {
     super()
     this.state = {
       danmuList: [
-        "I'm at Sofa",
-        "^_^",
-        "😁 ",
-        "_____________________",
-        "🚀 🚀 🚀",
-        "Great Danmu",
-        "Great Danmu1",
-        "Great Danmu2",
-        "Great Danmu3",
-        "Great Danmu4",
-        "Great Danmu5",
-        "Great Danmu6",
-        "Great Danmu7",
-        "Great Danmu8",
-        "Great Danmu9",
-        "Great Danmu10",
+        "aaaaaaaaaaa",
+        "bbbbbbbbbbb",
+        "ccccccccccc",
+        "ddddddddddd",
+        "eeeeeeeeeee",
+        "fffffffffff",
+        "ggggggggggg",
+        "hhhhhhhhhhh",
+        "iiiiiiiiiii",
+        "jjjjjjjjjjj",
+        "kkkkkkkkkkk",
+        "lllllllllll",
+        "mmmmmmmmmmm",
+        "nnnnnnnnnnn",
+        "ooooooooooo",
+        "ppppppppppp",
+        "qqqqqqqqqqq",
+        "rrrrrrrrrrr",
+        "sssssssssss",
+        "ttttttttttt",
+        "uuuuuuuuuuu",
+        "vvvvvvvvvvv",
+        "wwwwwwwwwww",
       ]
     }
   }
@@ -36,6 +43,9 @@ export default class App extends Component {
         </div>
         <div className="danmu-container">
           <Danmu2 danmuList={this.state.danmuList} />
+        </div>
+        <div className="danmu-container">
+
         </div>
       </div >
     )
