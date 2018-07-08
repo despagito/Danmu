@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
-import Danmu1 from './Danmu.js'
-import Danmu2 from './Danmu1.js'
+import Danmu from './Danmu.js'
+import Danmu1 from './Danmu1.js'
+import Danmu2 from './Danmu2.js'
 import './App.css'
 
 export default class App extends Component {
@@ -38,14 +39,14 @@ export default class App extends Component {
   render() {
     return (
       <div className="full-container">
-        <div className="danmu-container">
+        {/* <div className="danmu-container">
+          <Danmu danmuList={this.state.danmuList} />
+        </div> */}
+        {/* <div className="danmu-container">
           <Danmu1 danmuList={this.state.danmuList} />
-        </div>
+        </div> */}
         <div className="danmu-container">
           <Danmu2 danmuList={this.state.danmuList} />
-        </div>
-        <div className="danmu-container">
-
         </div>
       </div >
     )

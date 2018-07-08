@@ -90,3 +90,9 @@ body,
 
 
 
+
+/* danmu2 */
+.scroll-bar{
+  height: 300%;
+  width: 100%;
+}
