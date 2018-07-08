@@ -10,6 +10,7 @@ import './App.css'
 
 - https://github.com/skorekm/EndlessScroll-React 实现了基本的下拉加载功能,文档超级详细,用起来很贴心,适合学习.
 - https://github.com/scrollback/endless 功能正是我需要的,但是版本太老了,需要自己重新实现一遍.
+- https://github.com/AshConnolly/react-endless-runner exactly what I need!
 
 - 加载的同时删除
 - 自动滚动
